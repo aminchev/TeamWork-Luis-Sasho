@@ -59,7 +59,109 @@ public class SeaChess {
 				}
 				System.out.println();
 			}
-			
+			if(counter>=5){
+				if(board[0][0]==board[0][1] && board[0][0]==board[0][2] && board[0][0]!=' '){
+					if(counter%2 == 1){
+						System.out.println("Player 1 win the game");
+						winner=true;
+						break;
+					}
+					else{
+						System.out.println("Player 2 win the game");
+						winner=true;
+						break;
+					}
+				}
+				if(board[1][0]==board[1][1] && board[1][0]==board[1][2] && board[1][0]!=' ' ){
+					if(counter%2 == 1){
+						System.out.println("Player 1 win the game");
+						winner=true;
+						break;
+					}
+					else{
+						System.out.println("Player 2 win the game");
+						winner=true;
+						break;
+					}
+				}
+				if(board[2][0]==board[2][1] && board[2][0]==board[2][2] && board[2][0]!=' '){
+					if(counter%2 == 1){
+						System.out.println("Player 1 win the game");
+						winner=true;
+						break;
+					}
+					else{
+						System.out.println("Player 2 win the game");
+						winner=true;
+						break;
+					}
+				}
+				if(board[0][0]==board[1][0] && board[0][0]==board[2][0] && board[0][0]!=' '){
+					if(counter%2 == 1){
+						System.out.println("Player 1 win the game");
+						winner=true;
+						break;
+					}
+					else{
+						System.out.println("Player 2 win the game");
+						winner=true;
+						break;
+					}
+				}
+				if(board[0][1]==board[1][1] && board[0][1]==board[2][1] && board[0][1]!=' '){
+					if(counter%2 == 1){
+						System.out.println("Player 1 win the game");
+						winner=true;
+						break;
+					}
+					else{
+						System.out.println("Player 2 win the game");
+						winner=true;
+						break;
+					}
+				}
+				if(board[0][2]==board[1][2] && board[0][2]==board[2][2] && board[0][2]!=' '){
+					if(counter%2 == 1){
+						System.out.println("Player 1 win the game");
+						winner=true;
+						break;
+					}
+					else{
+						System.out.println("Player 2 win the game");
+						winner=true;
+						break;
+					}
+				}
+				if(board[0][0]==board[1][1] && board[0][0]==board[2][2]&& board[0][0]!=' ' ){
+					if(counter%2 == 1){
+						System.out.println("Player 1 win the game");
+						winner=true;
+						break;
+					}
+					else{
+						System.out.println("Player 2 win the game");
+						winner=true;
+						break;
+					}
+				}
+				if(board[0][2]==board[1][1] && board[0][2]==board[2][0] && board[0][2]!=' '){
+					if(counter%2 == 1){
+						System.out.println("Player 1 win the game");
+						winner=true;e
+						break;
+					}
+					else{
+						System.out.println("Player 2 win the game");
+						winner=true;
+						break;
+					}
+				}
+			}
+			counter++;		
+		}
+		if(winner == false){
+			System.out.println("No winner! Try again!");
+		}
 			
 	}
 	}
