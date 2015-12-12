@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Encript&DecriptFinal {
+public class EncriptDecriptFinal {
 
 		public static char[] encryptText(char[] encryptedText, char[][] key) {
 		int rowLetter1 = 0;
